@@ -1,1 +1,1 @@
-# HngarianGrammar
+# HungarianGrammar

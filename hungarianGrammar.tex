@@ -6,17 +6,35 @@
 
 % tabular (\toprule, \midrule, \bottomrule)
 \usepackage{booktabs}
+% full width tabular
+\usepackage{tabularx}
 
 
 \begin{document}
 
 \section{Vowel characterisation}
-\begin{table}[h]
-\centering
-\begin{tabular} { l l } \toprule
-	Back vowels: & a, á, o, ó, u, ú \\
-	Front unrounded vowels: & e, é, i, í \\
+
+\begin{tabularx}{\textwidth} { X c } \toprule
+	Back vowels: & a, á, o, ó, u, ú  \\
+	Front unrounded vowels: & e, é, i, í­ \\
 	Front rounded vowels: & ö, ő, ü, ű \\ \bottomrule
-\end{tabular}
-\end{table}		
+\end{tabularx}
+		
+
+
+\section{Plural of nouns}
+Add \textbf{k} to end of noun.  \\
+When last letter is \textbf{a} or \textbf{e} they change to \textbf{á}, \textbf{é} (egyetemista: egyetemisták). \\
+\begin{tabularx} {\textwidth}{ X X l } \toprule
+	Back vowel word & Front vowel word & \\ \midrule
+	 $\downarrow$ & Last vowel unrounded & Last vowel rounded \\
+	\textbf{o} & \textbf{e} & \textbf{ö} \\ \midrule
+	tanár: tanérok & művész: művészek & ismerős: ismerősök \\ \bottomrule
+\end{tabularx}
+Exceptions: \textbf{férfi}: \textbf{férfiak}, \textbf{könyv}: \textbf{könyvek}, \textbf{toll}: \textbf{tollak}
+
+\section{Plural of adjectives}
+
+
+
 \end{document}
